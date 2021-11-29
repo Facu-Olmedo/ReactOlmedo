@@ -1,27 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import BarraNav from './NavBar.js'
+import BarraNav from './componentes/NavBar/NavBar.js'
+import ItemComponentContainer from './componentes/ItemComponentContainer/ItemComponentContainer.js';
 
 function App() {
   return (
     <div className="App">
       <BarraNav />
       <header className="App-header">
+        <ItemComponentContainer greeting="¡Bienvenido a la Tienda Virtual!"/>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          Probando React con los cambios de git
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
